@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		jQuery(document).ready(function ($) {
+			$('.image-link').magnificPopup({
+				type: 'ajax'
+			});
+		});
+	</script>
+	<title>My Personal Website</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 500;
+		}
+		div {
+			background-color: #222;
+			color: #fff;
+			justify-content: center;
+			align-items: center;
+		}
+		header {
+			background-color: #222;
+			color: #fff;
+			padding: 5px;
+			text-align: center;
+			font-size: 30px;
+		}
+		main {
+			background-color: #f8f8f8;
+			padding: 20px;
+			margin: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		a {
+			text-decoration: none; /* This removes the underline */
+			color: darkcyan; 
+		}
+		a:hover {
+			color: turquoise;
+		}
+		.image-link:hover {
+			color: darkcyan;
+			font-weight: bold;
+		}
+		h1 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 13px;
+			line-height: 1.5;
+		}
+		span {
+			display:inline-block;
+			width: 120px;
+		}
+		ul.service li {
+			padding: 0px 0px;
+		}
+		li + li {
+			margin-top: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<div style="display: flex; height: auto;">
+		<header style="display: flex; align-items: center;">
+			<img src="img/photo.png" alt="Photo" style="width: 190px; height: auto;">
+			<div style="text-align: left; padding: 0px;">
+		  		<h1 style="margin-left: 10px;">Vera Rimmer</h1>
+				<p style="margin-left: 10px; font-size: 15px;">Postdoc at KU Leuven, Belgium</p>
+				<ul style="padding: 0; list-style-type: none; margin-left: 10px;">
+					<li style="font-size: 15px;"><a href="https://scholar.google.com/citations?user=rpFf8joAAAAJ" target="_blank"><img src="img/google.png" alt="Google" style="width: 15px; height: auto; margin-right:5px"></a>Google Scholar</li>
+					<li style="font-size: 15px;"><a href="linkedin.com/in/verarim/" target="_blank"><img src="img/linkedin.png" alt="Linkedin" style="width: 15px; height: auto; margin-right:5px"></a>LinkedIn</li>
+					<li style="font-size: 15px;"><a href="mailto:vera.rimmer@kuleuven.be"><img src="img/email.png" alt="Email" style="width: 15px; height: auto; margin-right:5px"></a>Email: first.last at kuleuven.be</li>
+				</ul>
+			</div>
+		</header>
+	</div>
+	<main>
+		<h2>About Me</h2>
+		<p align="justify">Hey there! I'm Vera and I work as a post-doctoral researcher at the <a href="https://distrinet.cs.kuleuven.be/about/" target="_blank">DistriNet</a> lab in <a href="https://research.kuleuven.be/en/">KU Leuven</a>, Belgium,
+			where I have recently completed my PhD in computer science under the supervision of <a href="https://distrinet.cs.kuleuven.be/people/WouterJoosen">Prof. Wouter Joosen</a> and <a href="https://distrinet.cs.kuleuven.be/people/DavyPreuveneers">Dr. Davy Preuveneers</a>.
+			I study cybersecurity and privacy-enhancing technologies; data analytics in cybersecurity and privacy; applied machine learning and deep learning; privacy and trustworthiness of applied data-driven AI.
+			My <a href="#publications">published research</a> revolves around studying deep learning as a threat against anonymous communication, and various aspects of AI-enabled network intrusion detection and authentication.
+			I am also closely involved in <a href="#teaching">teaching and supervising activities</a> at KU Leuven and in <a href="#service">academic service</a> for the security & privacy community.
+			<!--Priorly to my PhD, I've obtained a Master's degree in Artificial Intelligence from KU Leuven, Belgium in 2016 and a Specialist's degree in Computer Security in Peter the Great St. Petersburg Polytechnic University, Russia in 2015.-->
+			
+		</p>
+		<p align="justify">	
+			Apart from research, my experience also includes three years of working in industry, where I did software engineering, applied cryptography and penetration testing. More information can be found in my <a href="cv.pdf" target="_blank">CV</a> (last update in April 2023).
+		</p>
+		<p align="justify">	
+			I am generally interested in developing comprehensive understanding, reasonable expectations and mitigation of risks of data-driven AI in the ICT context. The driving force behind my work is exploring the optimal role of AI in our society, in the age of uncontrolled data collection and inference, while balancing its benefits and potential harm.
+			<!-- The consequences of uncontrolled data collection and inference are apparent in our world today, and it is essential to establish ethical frameworks to regulate these technologies to avoid unintended negative outcomes.-->
+		</p>
+		<p align="justify">	
+			In my free time, I enjoy traveling/hiking, dining, painting and arts, power yoga and swimming, watching series and cooking vegan food. And here is my <a class="image-link" href="snejok.png">cat</a>. <!--style="color:black;"--> 
+		</p>
+		<section id = "news">
+		<h2>Recent News</h2>
+			<ul class="news">
+				<li>
+					<span style="width: 110px;"><b>April 2023</b></span> I was accepted to the Machine Learning school in Thessaloniki (<a href="www.m2lschool.org">M2L 2023</a>) -- come talk to me there!
+				</li>
+				<li>
+					<span style="width: 110px;"><b>December 2022</b></span> Defended my PhD! <img src="img/academic-cap-emoji.png" alt="PhD" style="width: 15px; height: auto;">  Read the manuscript <a href="https://www.youtube.com/watch?v=QzVri6M55U0" target="_blank">here</a>, watch the defense <a href="https://www.youtube.com/watch?v=QzVri6M55U0" target="_blank">here</a>.
+				</li>
+				<li>
+					<span style="width: 110px;"><b>September 2022</b></span> I will organize <a href="">mentoring sessions</a> at IEEE Euro S&P in Delft, Netherlands. Reach out if interested!
+				</li>
+				<li>
+					<span style="width: 110px;"><b>September 2022</b></span> We hosted a successful <a href="https://cybersecurity-research.be/summer-school-on-ai-security" target="_blank">PhD Summer School on Security & Privacy in the Age of AI</a> here at DistriNet, KU Leuven.
+				</li>
+				<li>
+					<span style="width: 110px;"><b>July 2022</b></span> Presented our Trace Oddity paper on traffic correlation attacks on Tor at PETS in Sydney (<a href="https://www.youtube.com/watch?v=QzVri6M55U0" target="_blank">pre-recorded presentation</a>). 
+				</li>
+			</ul>
+		<section id = "publications">
+		<h2>Selected Publications</h2>
+			<ul>
+				<li>
+					<b>Vera Rimmer</b>, Theodor Schnitzler, Tom Van Goethem, Abel Rodríguez Romero, Wouter Joosen, Katharina Kohls<br><a href="https://petsymposium.org/2022/files/papers/issue3/popets-2022-0074.pdf" target="_blank">Trace Oddity: Methodologies for Data-Driven Traffic Analysis on Tor</a>, Proceedings on Privacy Enhancing Technologies (PoPETS), 2022.
+					<a href="file:///Users/vera/Git/personal_webpage/bib/pets2022.bib" onclick="window.open('ndss.bib', 'newwindow', 'width=400,height=300'); return false;"><img src="img/cite-icon.png" alt="Bibtex" style="width: 15px; height: auto;"></a>
+				</li>
+				<li> 
+					Ali Shafiei, <b>Vera Rimmer</b>, Ilias Tsingenopolous, Lieven Desmet, Wouter Joosen<br><a href="https://dl.acm.org/doi/abs/10.1145/3494110.3528244" target="_blank">Positiong Paper: on Advancing Adversarial Malware Generation using Dynamic Features</a>, Proceedings of the 1st Workshop on Robust Malware Analysis (WoRMA), 2022.
+					<a href="file:///Users/vera/Git/personal_webpage/bib/worma2022.bib" onclick="window.open('ndss.bib', 'newwindow', 'width=400,height=300'); return false;"><img src="img/cite-icon.png" alt="Bibtex" style="width: 15px; height: auto;"></a>
+				</li>
+				<li>
+					<b>Vera Rimmer</b>, Azqa Nadeem, Sicco Verver, Davy Preuveneers, Wouter Joosen<br><a href="https://link.springer.com/chapter/10.1007/978-3-030-98795-4_11" target="_blank">Open-World Network Intrusion Detection." Security and Artificial Intelligence</a>, Springer, p. 254-283, 2022.
+					<a href="file:///Users/vera/Git/personal_webpage/bib/springer2022.bib" onclick="window.open('ndss.bib', 'newwindow', 'width=400,height=300'); return false;"><img src="img/cite-icon.png" alt="Bibtex" style="width: 15px; height: auto;"></a>
+				</li>
+				<li>
+					Gints Engelen, <b>Vera Rimmer</b>, Wouter Joosen<br><a href="https://intrusion-detection.distrinet-research.be/WTMC2021/Resources/wtmc2021_Engelen_Troubleshooting.pdf" target="_blank">Troubleshooting an Intrusion Detection Dataset: The CICIDS2017 Case Study</a>, IEEE Security and Privacy Workshops, Workshop on Traffic Measurement and Classification (WTMC), 2020.
+					<a href="file:///Users/vera/Git/personal_webpage/bib/wtmc2020.bib" onclick="window.open('ndss.bib', 'newwindow', 'width=400,height=300'); return false;"><img src="img/cite-icon.png" alt="Bibtex" style="width: 15px; height: auto;"></a>
+				</li>
+				<li>
+					<b>Vera Rimmer</b>, Davy Preuveneers, Marc Juarez, Tom Van Goethem, Wouter Joosen<br><a href="https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_03A-1_Rimmer_paper.pdf" target="_blank">Automated Website Fingerprinting through Deep Learning</a>, Network and Distributed System Security Symposium (NDSS), 2018.
+					<a href="file:///Users/vera/Git/personal_webpage/bib/ndss2018.bib" onclick="window.open('ndss.bib', 'newwindow', 'width=400,height=300'); return false;"><img src="img/cite-icon.png" alt="Bibtex" style="width: 15px; height: auto;"></a>
+				</li>
+				<li>
+					Giuseppe Garofalo, <b>Vera Rimmer</b>, Tim Van hamme, Davy Preuveneers, Wouter Joseen<br><a href="https://www.usenix.org/system/files/conference/woot18/woot18-paper-garofalo.pdf" target="_blank">Fishy Faces: Crafting Adversarial Images to Poison Face Authentication</a>, USENIX Workshop on Offensive Technologies (WOOT), 2018.
+					<a href="file:///Users/vera/Git/personal_webpage/bib/woot2018.bib" onclick="window.open('ndss.bib', 'newwindow', 'width=400,height=300'); return false;"><img src="img/cite-icon.png" alt="Bibtex" style="width: 15px; height: auto;"></a>
+				</li>
+				<li>
+					Davy Preuveneers, <b>Vera Rimmer</b>, Ilias Tsingenopolous, Jan Spooren, Wouter Joosen, Elisabeth Ilie-Zudor<br><a href="https://www.mdpi.com/2076-3417/8/12/2663" target="_blank">Chained Anomaly Detection Models for Federated Learning: An Intrusion Detection Case Study</a>, Applied Sciences, vol. 8, num. 12, p. 1-21, 2018.
+					<a href="file:///Users/vera/Git/personal_webpage/bib/chained2018.bib" onclick="window.open('ndss.bib', 'newwindow', 'width=400,height=300'); return false;"><img src="img/cite-icon.png" alt="Bibtex" style="width: 15px; height: auto;"></a>
+				</li>
+			</ul>
+		</section>
+		<section id = "service">
+			<h2>Selected Academic Service</h2>
+				<ul class="service">
+					<li>
+						Will serve on the <a href="https://www.iaria.org/conferences2023/CfPSECURWARE23.html" target="_blank"><b>SECURWARE 2023</b></a>, <a href="https://petsymposium.org/cfp24.php" target="_blank"><b>PETS 2024</b></a> and <a href="https://wp.nyu.edu/acns2024/call-for-papers/" target="_blank"><b>ACNS 2024</b></a> PCs!
+					</li>
+					<li>
+						<span><b>PETS 2023</b></span>Program committee member
+					</li>
+					<li>
+						<span><b>EuroS&P 2023</b></span>Mentoring chair
+					</li>
+					<li>
+						<span><b>WiSec 2023</b></span>Program committee member
+					</li>
+					<li>
+						<span><b>EuroS&P 2022</b></span><span style="width:225px">Program committee member</span><img src="img/award.png" style="width: 12px; height: auto;"> <i>Distinguished reviewer award 2022</i><br/><span></span>Posters co-chair
+					</li>
+					<li>
+						<span><b>WiSec 2022</b></span>Program committee member
+					</li>
+					<li>
+						<span><b>PETS 2022</b></span>External reviewer
+					</li>
+					<li>
+						<span><b>EuroS&P 2021</b></span><span style="width:225px">Program committee member</span><img src="img/award.png" style="width: 12px; height: auto;"> <i>Distinguished reviewer award 2021</i>
+					</li>
+					<li>
+						<span><b>WPES 2020</b></span>Program committee member
+					</li>
+					<li>
+						<span><b>NSPW 2020</b></span>Program committee member
+					</li>
+					<li>
+						<span><b>EuroS&P 2020</b></span>Program committee member
+					</li>
+					<li>
+						<span><b>EuroS&P 2019</b></span>External reviewer
+					</li>
+					<li>
+						<span><b>Selected journals</b></span>IEEE TDSC, IEEE TIFS, Computer Networks
+					</li>
+				</ul>
+		</section>
+		<section id = "teaching">
+			<h2>Teaching and Mentoring</h2>
+			<h3>Teaching Assistance</h3>
+				<ul>
+					<li>
+						<span style="width: 140px;"><b>Bachelor 2016-2021</b></span>Computer Architecture and Software Systems.
+					</li>
+					<li>
+						<span style="width: 140px;"><b>Bachelor 2016-2018</b></span>Object-Oriented Programming
+					</li>
+				</ul>
+			<h3>Master Theses (Co-)Supervision</h3>
+				<ul>
+					<li>
+						<span style="width: 190px;"><b>Giuseppe Garofalo</b></span>Exploring poisoning attacks against a face recognition system, 2018.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Marco Farinetti</b></span>Evasion attacks against ensemble-learning based behavioral authentication, 2018.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Nicolas Finné</b></span>Open set recognition of network intrusions, 2018.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Myriam Van Erum</b></span>Interpretable log analysis with deep learning, 2019.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Jin Li</b></span>Sequence-based intrusion detection with recurrent neural networks, 2019.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Pieter Claerhout</b></span>Access control in evolving threat landscapes, 2019.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Tom Gijselinck</b></span>Securing self-sovereign identity to prevent impersonation of digital identity, 2019.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Maarten Craeynest</b></span>Morphed face generation using generative adversarial networks, 2019.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Rik Pauwels</b></span>Defenses against black-box adversarial attacks with reinforcement learning, 2020.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Andreas Vande Voorde</b></span>Automating black-box adversarial attacks, 2020.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Arno Stienaers</b></span>Adversarial examples against network intrusion detection systems in feature space, 2020.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Abel Rodríguez Romero</b></span>Deep unsupervised network anomaly detection in real traffic flows, 2020.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Mattias Vanderwegen</b></span>Attribution of malicious cyber incidents with neural networks, 2022.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Jonathan Craessaerts</b></span>A more efficient way to detect volumetric attacks using flow aggregation and deep learning, 2022.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Simon Tas</b></span>Enhancing machine learning for security applications with active learning, 2022.
+					</li>
+					<li>
+						<span style="width: 190px;"><b>Sander Prenen</b></span>Efficient and evasive distributed adversarial attacks using particle swarm optimization, 2022.
+					</li>
+				</ul>
+				</section>
+		<!--<h2>Contact Me</h2>
+		<p>You can email me at <a href="mailto:vera.rimmer@kuleuven.be">&lt;first-name&gt;.&lt;last-name&gt;@kuleuven.be</a>.</p>-->
+	</main>
+</body>
+</html>
+
